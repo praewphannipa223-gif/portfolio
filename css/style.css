@@ -7,12 +7,13 @@
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
+    align-items: center;
 }
 
-.menu{
-    display: flex;
-    list-style: none;
+.long img{
+    width: 100px;
+    height: auto;
 }
 
 .menu li{
@@ -21,11 +22,11 @@ nav{
 
 .menu li a{
     text-decoration: none;
-    color:rgb(99,199,161);
+    color: rgb(99, 199, 161);
 }
 
 section.banner{
-    background-color: rgb(231, 130, 130);
+    background-color: rgb(230, 89, 117);
     height: 400px;
     display: flex;
     justify-content: center;
@@ -39,7 +40,7 @@ main{
 }
 
 main div{
-    padding: 20;
+    padding: 20px;
     justify-content: center;
     text-align: center;
 }
@@ -50,8 +51,8 @@ main div img{
 }
 
 footer{
-    background-color: aliceblue;
-    color: white;
+    background-color: rgb(139, 232, 255);
+    color: #ec89c6;
     text-align: center;
     padding: 10px;
 }
