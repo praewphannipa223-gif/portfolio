@@ -51,8 +51,158 @@ main div img{
 }
 
 footer{
-    background-color: rgb(139, 232, 255);
-    color: #ec89c6;
+    background-color: rgb(0, 0, 0);
+    color: #fcfcfc;
     text-align: center;
     padding: 10px;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* =========================================
+   2. แถบเมนูนำทาง (Navbar)
+   ========================================= */
+.navbar {
+    background-color: #2c3e50;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover, 
+.navbar a.active {
+    color: #3498db;
+}
+
+/* =========================================
+   3. พื้นที่จัดวางเนื้อหา (Container)
+   ========================================= */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px 40px 20px;
+}
+
+/* =========================================
+   4. ส่วนรูปโปรไฟล์และหัวข้อ (Profile Section)
+   ========================================= */
+.profile-section {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3498db;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 15px;
+}
+
+.page-title {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.name-label {
+    font-size: 1.1rem;
+    color: #666666;
+    font-weight: 500;
+}
+
+/* =========================================
+   5. เส้น Timeline ประวัติการศึกษา
+   ========================================= */
+.timeline {
+    position: relative;
+    border-left: 3px solid #3498db;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* จุดวงกลมบนเส้น Timeline */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -29px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: #3498db;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+}
+
+.timeline-year {
+    font-weight: bold;
+    color: #e67e22;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.timeline-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06);
+}
+
+.timeline-content h3 {
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-size: 1.2rem;
+}
+
+.institution {
+    font-weight: 600;
+    color: #444444;
+}
+
+.detail {
+    color: #666666;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+.awards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.award-card {
+    flex: 1 1 350px;
+    max-width: 400px;
 }
